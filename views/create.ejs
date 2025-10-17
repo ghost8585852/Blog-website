@@ -1,0 +1,71 @@
+<%- include("partials/header.ejs") %>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-body{
+            background-color: rgb(57, 56, 56);
+            justify-self: center;
+            display: grid;
+            grid-template-rows: auto auto auto 60px ;
+            width: 80%;
+            
+        }
+        .form-body>textarea{
+            margin-bottom: 50px;
+            
+        }
+        .form-body>.title{
+            height: 90px;
+            margin-top: 40px;
+        }
+        .form-body>.symmary{
+            height: 200px;
+        }
+        .form-body>.content{
+            height: fit-content;
+            min-height: 700px;
+            font-size: 25px;
+        }
+        .submit-button-for-form{
+            height: 50px;
+            width: 100px;
+            margin: 0 auto;
+        }
+        #in{
+            border-radius: 20px;
+        }
+        textarea{
+            padding: 20px;
+            color: white;
+            background-color: rgb(89, 84, 84);
+
+        }
+        .image-selector{
+            margin: 0 auto;
+        }
+
+
+
+    </style>
+</head>
+<body> -->
+    <div class="form-container">
+       <form class="form-body" action="/upload" method="post" enctype="multipart/form-data">
+           <textarea  id="in" class="title" type="text" name="title" alt="title" placeholder="title"></textarea>
+           <textarea  id="in" class="summary"  name="summary"  alt="about"  placeholder="Discription"></textarea>
+           <textarea  id="in" class="content"  name="content" placeholder="Right your content here...."></textarea>
+           <input  class="image-selector " type="file" name="image" accept="image/*" >
+
+        
+           <input class="submit-button-for-form" type="submit" name="submit" value="POST">
+        
+
+        </form>
+    </div>
+<!-- </body>
+</html> -->
+<%- include("partials/footer.ejs") %>

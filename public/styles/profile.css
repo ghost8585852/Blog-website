@@ -1,0 +1,99 @@
+.profile-container{
+            background-color: rgb(16, 16, 16);
+            width: 90%;
+            justify-self: center ;
+            height: fit-content;
+            grid-column: 2;
+            display: grid;
+            width:75%;
+            min-width: 110vh;
+            border-radius: 20px;
+            grid-template-rows: 250px;
+            margin-bottom: 20px;
+            margin-top: 40px;
+            
+        }
+        .profile-image{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .profile-image-container{
+            background-color: red;
+            width: 400px;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid white;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .user-name{
+            color: rgb(248, 248, 248);
+            width: fit-content;
+            /* background-color: aliceblue; */
+            margin: 0 auto;
+        }
+        .image-username-section{
+            /* background-color: red; */
+            width: 95%;
+            justify-self: center;
+
+        }
+        .profile-content-section{
+            background-color: rgb(73, 71, 71);
+            width: 95%;
+            justify-self: center;
+            height: fit-content;
+            min-height: 600px;
+            border-radius: 30px;
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: 80px auto;
+        }
+        .user-posts-heading{
+            text-align: center;
+            background-color: rgb(62, 63, 65);
+        }
+        .user-posts{
+            height: 100%;
+            padding:20px;
+            
+        }.user-posts-inside{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100%;
+        }
+      
+        .all-posts{
+            height: 90%;
+            width: 90%;
+            justify-self: center;
+            background-color: rgb(0, 0, 0);
+            display: grid;
+            grid-auto-rows:60px;
+            color: aliceblue;
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 20px;
+            
+            margin-bottom: 20px;
+        }
+        .all-posts-inside{
+            display: grid;
+            background-color: rgb(87, 95, 92);
+            grid-template-columns: 60px 1fr;
+            border-radius: 20px;
+        }
+        .numbering-posts{
+            justify-self:center;
+        }
+        .content-heading{
+            align-self: center;
+            padding-left: 20px;
+        }
+        .all-posts-inside:hover{
+            background-color: rgb(47, 47, 48);
+            transition: 0.6s;
+        }
